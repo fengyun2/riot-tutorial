@@ -1,0 +1,38 @@
+{
+  "name": "riot-tutorial",
+  "version": "2.0.1",
+  "description": "riot-tutorial",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengyun2/riot-tutorial.git"
+  },
+  "main": "app/main.js",
+  "author": "LY",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --progress --colors -d --port 3000"
+  },
+  "keywords": [
+    "riot",
+    "webpack"
+  ],
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.13.2",
+    "riotjs-loader": "^3.0.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "riot": "^2.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/fengyun2/riot-tutorial/issues"
+  },
+  "homepage": "https://github.com/fengyun2/riot-tutorial#readme"
+}
