@@ -14,7 +14,10 @@
   <script>
     this.comments = opts.comments || []
     const self = this
+
+    //- 监听 'add_comment' 事件
     riot.commentStore.on('add_comment', (comment) => {
+      //- 发动引擎了
       console.log('trigger')
       self.comments.push(comment)
       self.update()
@@ -42,6 +45,8 @@
       const author = this.author.value.trim()
       const content = this.content.value.trim()
       if(author && content) {
+
+        //- 触发 'add_comment' 事件
         riot.commentStore.trigger('add_comment', {author: author, text: content})
 
         this.author.value = ''
