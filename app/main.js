@@ -1,5 +1,5 @@
 require('./app.tag')
 
-riot.mount('*', {
+riot.mount('div.page', 'app', {
     title: 'Random number generator!'
 })

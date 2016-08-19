@@ -11,4 +11,14 @@ require('./comment_store.js')
 <timer start="10"></timer>
 <timer start="20"></timer>
 <comments/>
+
+
+<script>
+
+this.on('mount', function() {
+  const comments = this.tags.comments
+  comments.tags['comment-form'].add()
+  //- console.log(comments.tags['comment-form'])
+})
+</script>
 </app>
