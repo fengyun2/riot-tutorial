@@ -3,6 +3,8 @@ require('./todo.tag')
 require('./timer.tag')
 require('./comments.tag')
 require('./comment_store.js')
+require('./login/login.tag')
+require('./login/auth.js')
 <app>
 <name first="hello" last="world"></name>
 <name first="Ola" last="Mundo"></name>
@@ -11,7 +13,7 @@ require('./comment_store.js')
 <timer start="10"></timer>
 <timer start="20"></timer>
 <comments/>
-
+<login/>
 
 <script>
 
@@ -20,5 +22,6 @@ this.on('mount', function() {
   comments.tags['comment-form'].add()
   //- console.log(comments.tags['comment-form'])
 })
+
 </script>
 </app>
