@@ -31,7 +31,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "riot": "^2.5.0"
+    "riot": "^3.8.0"
   },
   "bugs": {
     "url": "https://github.com/fengyun2/riot-tutorial/issues"
